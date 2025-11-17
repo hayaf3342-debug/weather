@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" role="application">
+      <div class="top">
+        <div class="brand">
+          <div class="logo">W</div>
+          <div>
+            <h1>Simple Weather</h1>
+            <div class="muted">Current weather — search a city or use geolocation</div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <input id="cityInput" type="text" placeholder="e.g. Karachi, London, Tokyo" aria-label="city name" />
+          <button id="searchBtn">Search</button>
+          <button id="locBtn" class="ghost">Use my location</button>
+          <button id="unitBtn" class="ghost">°C</button>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="weather-card" id="weatherCard">
+          <div class="weather-header">
+            <div class="icon" id="weatherIcon">—</div>
+            <div>
+              <div class="temp" id="temp">—</div>
+              <div class="desc" id="desc">—</div>
+              <div class="muted" id="place">—</div>
+            </div>
+          </div>
+
+          <div class="meta" id="meta">
+            <div id="humidity">Humidity: —</div>
+            <div id="wind">Wind: —</div>
+            <div id="feels">Feels like: —</div>
+            <div id="pressure">Pressure: —</div>
+          </div>
+
+          <div class="footer">
+            <div class="muted" id="updated">Last updated: —</div>
+            <div class="muted">Powered by OpenWeatherMap</div>
+          </div>
+        </div>
+
+        <div class="forecast" id="forecastBlock">
+          <h3>Quick forecast</h3>
+          <div class="forecast-list" id="forecastList">
+            <!-- forecast items -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
